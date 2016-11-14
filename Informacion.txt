@@ -1,0 +1,30 @@
+Composer
+
+Composer es un manejador de dependencias, no un gestor de paquetes. 
+Pero es cierto que trata con paquetes y librerías, la instalación siempre es local para cualquier proyecto,
+las librerías se instalan en un directorio por defecto (normalmente es /vendor). 
+Composer es capaz de instalar las librerías que requiere tu proyecto con las versiones que necesiten. ¿Y si mis librerías dependen de otras? 
+También es capaz de resolver eso y descargar todo lo necesario para que funcione y así quitarnos del dolor de cabeza de hacer todo eso de forma manual.
+
+UrlRewriting
+
+Es una metodologia de tener url's limpias
+
+
+Estructura de Carpetas
+• The bin folder holds the Cake console executables.
+• The config folder holds the (few) Configuration files CakePHP uses. Database connection details,
+bootstrapping, core configuration files and more should be stored here.
+• The plugins folder is where the Plugins your application uses are stored.
+• The logs folder normally contains your log files, depending on your log configuration.
+• The src folder will be where you work your magic: it’s where your application’s files will be placed.
+• The tests folder will be where you put the test cases for your application.
+• The tmp folder is where CakePHP stores temporary data. The actual data it stores depends on how you
+have CakePHP configured, but this folder is usually used to store model descriptions and sometimes
+session information.
+• The vendor folder is where CakePHP and other application dependencies will be installed. Make a
+personal commitment not to edit files in this folder. We can’t help you if you’ve modified the core.
+• The webroot directory is the public document root of your application. It contains all the files you
+want to be publically reachable.
+Make sure that the tmp and logs folders exist and are writable, otherwise the performance of your
+application will be severely impacted. In debug mode, CakePHP will warn you, if it is not the case.
